@@ -1,0 +1,23 @@
+.page-content h2 {
+    margin-bottom: 20px;
+}
+
+.page-content p {
+    margin-bottom: 20px;
+}
+
+ .page-content .icon-class {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+.page-content .container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.page-content .row div {
+    margin-bottom: 15px;
+}

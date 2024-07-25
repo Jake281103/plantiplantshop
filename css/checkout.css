@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+
+.fail-info{
+    width: 580px;
+    height: 60px;
+    color: red;
+    text-align: center;
+    line-height: 60px;
+
+
+    background-color: linear-gradient(360deg,#000,#333);
+
+}
+
+.container{
+    width: 580px;
+    height: auto;
+
+    background: linear-gradient(360deg,#000,#333);
+    border-radius: 20px;
+}
+
+.visacard{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px); /* used for to blur */
+
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 255, 0.3);
+    border-radius: 20px;
+
+    padding: 35px;
+}
+
+.logo .visalog{
+    width: 100px;
+    padding-bottom: 40px;
+    opacity: 0.9;
+}
+
+.form-group{
+    display: flex;
+}
+
+label{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+
+    padding-bottom: 2px;
+}
+
+.form-control{
+    height: 25px;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+
+.form-control:focus{
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: #bbb;
+}
+
+.card-number{
+    margin-bottom: 30px;
+
+    position: relative;
+
+    overflow: hidden; /* to remove all place outside of card-number div  */
+}
+
+input[id="card-digit"]{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
+
+/* input[id="card-digit"]:hover{
+    border-bottom: 2px solid #fff;
+} */
+
+.underline{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+
+    transition: left .4s ease-in;
+}
+
+.card-number input[id="card-digit"]:hover + .underline,
+.card-number input[id="card-digit"]:focus + .underline {
+    left: 0;
+}
+
+.card-holder{
+    width: 50%;
+    padding: 0 80px 0 0;
+    margin-right: 0px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+input[id="card-name"]{
+    width: 100px;
+    height: 25px;
+}
+
+.card-holder input[id="card-name"]:hover + .underline,
+.card-holder input[id="card-name"]:focus + .underline {
+    left: 0;
+}
+
+.card-date{
+    width: 90px;
+    padding: 0;
+    
+    margin-right: 60px;     
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-date input[id="card-exp"]:hover + .underline,
+.card-date input[id="card-exp"]:focus + .underline {
+    left: 0;
+}
+
+.card-code{
+    width: 70px;
+    padding: 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-code input[id="card-ccv"]:hover + .underline,
+.card-code input[id="card-ccv"]:focus + .underline {
+    left: 0;
+}
+
+.buy, .buy-info{
+    color: #fff;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtotal, .ship-fee, .total{
+    margin-right: 30px;
+}
+
+.buy-btns{
+    width: 100px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(172, 170, 170);
+    border-radius: 4px;
+
+    transition: all .5s;
+
+    margin-right: 20px;
+}
+
+.cancel-btns{
+    width: 100px;
+    height: 40px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(172, 170, 170);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+
+    transition: all .5s;
+
+    margin-left: 5px;
+
+    margin-left: 20px;
+}
+
+.buy-btns:hover, .cancel-btns:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+}
